@@ -6,7 +6,7 @@ export default function Experience()
     
     return <>
 
-        <color args={ [ '#241a1a' ] } attach="background" />
+        <color args={ [ '#1A0115' ] } attach="background" />
 
         <Environment preset="city" />
         
@@ -22,8 +22,8 @@ export default function Experience()
                 <rectAreaLight
                     width={ 2.5 }
                     height={ 1.65 }
-                    intensity={ 65 }
-                    color={ '#c012c7' }
+                    intensity={ 80 }
+                    color={ '#00AAFF' }
                     rotation={ [ - 0.1, Math.PI, 0 ] }
                     position={ [ 0, 0.55, - 1.15 ] }
                 />
@@ -45,13 +45,17 @@ export default function Experience()
                 </primitive>
 
                 <Text
-                    font="./HussarBoldWeb-bf92.woff"
+                    font="./Sen-Bold.ttf"
                     fontSize={ .75 }
                     position={ [ 2, 0.75, 0.75 ] }
                     rotation-y={ - 1.25 }
                     maxWidth={ 1 }
                     textAlign='center'
-                    color="#4ca3e5"
+                    color="#00BBFF"
+                    outlineBlur={ 0.1 }
+                    outlineWidth={ 0.015 }
+                    outlineColor="#88FFFF"
+                    outlineOpacity={ 0.5 }
                 >
                    AXEL CROIZE
                 </Text>
@@ -60,9 +64,9 @@ export default function Experience()
 
         <ContactShadows
             position-y={ - 1.4 }
-            opacity={ 0.4 }
+            opacity={ 1 }
             scale={ 5 }
-            blur={ 2.4 }
+            blur={ 4.4 }
         />
 
     </>
